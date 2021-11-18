@@ -1,0 +1,8 @@
+﻿.vs
+Smartwyre.DeveloperTest/bin
+Smartwyre.DeveloperTest/obj
+Smartwyre.DeveloperTest.Runner/bin
+Smartwyre.DeveloperTest.Tests/bin
+Smartwyre.DeveloperTest.Runner/obj
+Smartwyre.DeveloperTest.Tests/obj
+*.user
