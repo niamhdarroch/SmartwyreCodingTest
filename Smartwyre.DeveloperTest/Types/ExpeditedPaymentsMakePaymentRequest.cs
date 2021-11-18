@@ -26,9 +26,11 @@ namespace Smartwyre.DeveloperTest.Types
             if (!base.ValidateAccountEligibility(account))
                 return false;
 
-            if (this.PaymentScheme != PaymentScheme.ExpeditedPayments)
+            if (!account.AllowedPaymentSchemes.HasFlag(AllowedPaymentSchemes.ExpeditedPayments))
+            {
                 return false;
-            
+            }
+
             return account.Balance >= Amount;
         }
     }
